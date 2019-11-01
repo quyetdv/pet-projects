@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Global CSS -->
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+      <form class="login-form">
+        <h1>Reset Password</h1>
+
+        <!-- Old Password -->
+        <div class="txtb" style="display: flex;">
+            <div>
+              <input type="password" name="password" class="form-control" id="password-field">
+              <span data-placeholder="Old Password"></span>
+            </div>
+            <div toggle="#password-field" class="fa fa-fw fa-eye hide-show-pwd toggle-password" style="line-height: 40px;"></div>  
+        </div>
+        <div id="pwd_error"></div>
+
+        <!-- New Password -->
+        <div class="txtb" style="display: flex;">
+            <div>
+              <input type="password" name="newPassword" class="form-control" id="newPassword">
+              <span data-placeholder="New Password"></span>
+            </div>
+            <div toggle="#newPassword" class="fa fa-fw fa-eye hide-show-pwd toggle-password" style="line-height: 40px;"></div>  
+        </div>
+        <div id="newPwd_error"></div>
+
+        <!-- Confirm New Password -->
+        <div class="txtb" style="display: flex;">
+          <div>
+            <input type="password" name="reNewPassword" class="form-control" id="reNewPassword">
+            <span data-placeholder="Confirm New Password"></span>
+          </div>
+          <div toggle="#reNewPassword" class="fa fa-fw fa-eye hide-show-pwd toggle-password" style="line-height: 40px;"></div>  
+        </div>
+        <div id="reNewPwd_error"></div>
+        
+
+        <div>
+            <input type="button" class="logbtn resetbtn" value="Save">
+        </div>
+        <div id="msg" style="margin-right: unset;">Your password changed successfully!!</div>
+        <div class="bottom-text">
+          <a href="index.html">&nbsp;Go back to Home Page</a>
+        </div>
+
+      </form>
+      <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/079af7463a.js" crossorigin="anonymous"></script>  
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="js/form.js"></script>
+  </body>
+</html>

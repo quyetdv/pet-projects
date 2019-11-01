@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Global CSS -->
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+      <form action="result.html" class="login-form">
+        <h1>Sign In</h1>
+
+        <div class="txtb">
+          <div>
+            <input type="email" name="email" id="email" class="form-control">
+            <span data-placeholder="Email"></span>
+          </div>
+        </div>
+        <div id="email_error"></div>
+
+        <div class="txtb" style="display: flex;">
+            <div>
+              <input type="password" name="password" class="form-control" id="password-field">
+              <span data-placeholder="Password"></span>
+            </div>
+            <div toggle="#password-field" class="fa fa-fw fa-eye hide-show-pwd toggle-password" style="line-height: 40px;"></div>  
+        </div>
+        <div id="pwd_error"></div>
+
+        <div>
+            <input type="submit" class="logbtn" value="Login">
+        </div>
+
+        <div id="container">
+            <a href="resetpwd.html">Reset Password</a>
+            <a href="forgetpwd.html">Forgot Password</a>
+        </div>
+
+        <div class="bottom-text">
+          Don't have account? <a href="sgup.html">&nbsp;Sign up</a>
+        </div>
+
+      </form>
+      <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/079af7463a.js" crossorigin="anonymous"></script>  
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="js/form.js"></script>
+  </body>
+</html>

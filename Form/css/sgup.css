@@ -1,0 +1,42 @@
+.sgup-form {
+	width: 480px;
+	background: rgba(44, 62, 80, 0.7);
+	height: 580px;
+	padding: 20px 40px;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.sgup-form h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+#name .txtb {
+	margin: 0;
+}
+.sgup-form .bottom-text {
+	margin-top: 40px;
+}
+input[type="password"] {
+	width: 350px;
+}
+#name1_error, #name2_error {
+  width: 40%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 16px;
+  position: absolute;
+  z-index: 9999;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+#name2_error {
+  margin-left: 210px;
+}

@@ -1,0 +1,26 @@
+.login-form{
+  width: 360px;
+  background: rgba(44, 62, 80, 0.7);
+  height: 580px;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.login-form h1{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+#container {
+  display: flex;
+}
+#container a {
+  flex: 1;
+  padding: 10px;
+}
+

@@ -1,0 +1,15 @@
+.cong {
+	width: 360px;
+	background: rgba(44, 62, 80, 0.7);
+	height: 360px;
+	padding: 80px 40px;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.cong h2 {
+	margin-bottom: 20px;
+}

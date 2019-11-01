@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Global CSS -->
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/sgup.css">
+  </head>
+  <body>
+
+      <form class="sgup-form">
+        <h1>Sign Up</h1>
+
+        <!-- Name -->
+        <div id="name" style="display: flex;">
+          <div class="txtb">
+            <div>
+              <input type="text" name="firstName" id="firstName" class="form-control">
+              <span data-placeholder="First Name"></span>
+            </div>
+          </div>
+          <div id="name1_error"></div>
+
+          <div class="txtb" style="margin-left: auto;">
+            <div>
+              <input type="text" name="lastName" id="lastName" class="form-control">
+              <span data-placeholder="Last Name"></span>
+            </div>
+          </div>
+          <div id="name2_error"></div>
+        </div>
+
+        <!-- Phone -->
+        <div class="txtb">
+          <div>
+            <input type="text" name="phone" id="phone" class="form-control">
+            <span data-placeholder="Phone Number"></span>
+          </div>
+        </div>
+        <div id="phone_error"></div>
+        <!-- Email -->
+        <div class="txtb">
+          <div>
+            <input type="email" name="email" id="email" class="form-control">
+            <span data-placeholder="Email"></span>
+          </div>
+        </div>
+        <div id="email_error"></div>
+
+        <!-- Password -->
+        <div class="txtb" style="display: flex;">
+            <div>
+              <input type="password" name="password" class="form-control" id="password-field">
+              <span data-placeholder="Password"></span>
+            </div>
+            <div toggle="#password-field" class="fa fa-fw fa-eye hide-show-pwd toggle-password" style="line-height: 40px;"></div>  
+        </div>
+        <div id="pwd_error"></div>
+
+        <!-- Confirm Password -->
+        <div class="txtb" style="display: flex;">
+            <div>
+              <input type="password" name="password" class="form-control" id="repassword-field">
+              <span data-placeholder="Confirm Password"></span>
+            </div>
+            <div toggle="#repassword-field" class="fa fa-fw fa-eye hide-show-pwd toggle-password" style="line-height: 40px;"></div>  
+        </div>
+        <div id="repwd_error"></div>
+
+
+        <div>
+            <input type="button" class="logbtn sgupbtn" value="Sign Up">
+        </div>
+        <div id="msg">Congratulations! You Sign up successfully!!!</div>
+        <div class="bottom-text">
+          Already have account? <a href="index.html">&nbsp;Sign In</a>
+        </div>
+
+      </form>
+      <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/079af7463a.js" crossorigin="anonymous"></script>  
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="js/form.js"></script>
+  </body>
+</html>
